@@ -9,6 +9,7 @@
         body {
             background-color: #F8F8F8;
             text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
             main {
                 display: inline-block;
@@ -28,16 +29,21 @@
                     nav {
                         display: inline-block;
                         float: right;
+                        text-align: center;
                     }
-                        a {
+                        header > nav > a {
                             display: inline-block;
                             padding: 20px;
+                            color: gray;
+                            font-size: 20px;
+                            text-decoration: none;
+                            text-transform: capitalize;
                         }
                 section {
                     display: inline-block;
                     width: 100%;
                     float: left;
-                    margin-top: 100px;;
+                    margin-top: 50px;
                 }
                 section > img {
                         display: inline-block;
@@ -56,6 +62,7 @@
                             width: 100%;
                             font-size: 100px;
                             margin-bottom: 0px;
+                            margin-top: 0;
                         }
                         p {
                             display: inline-block;
@@ -63,27 +70,41 @@
                             margin: 0px;
                             font-size: 24px;
                         }
+    .mygtukas {
+        border-radius: 25px;
+        border: 2px solid gray;
+        padding: 0px 20px 0px 20px; 
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+    .visasPlotis {
+        display: inline-block;
+        width: 100%;
+    }
+    #tekstas{
+        color: black;
+    }
                     
     </style>
 </head>
 <body>
-    <main style="display: ;">
-        <header>
+    <main>
+        <header class="visasPlotis">
             <img src="logo.PNG">
-            <nav>
+            <nav> 
                 <a href="#">Home</a>
                 <a href="#">Tracks</a>
                 <a href="#">Library</a>
                 <a href="#">Community</a>
-                <a href="#">Sign in</a>
+                <a href="#" class="mygtukas">Sign in</a>
             </nav>
         </header>
         <section>
             <div>
-                <h1>
+                <h1 class="visasPlotis">
                     404
                 </h1>
-                <p>Lorem ipsum dolor sit amet consectetur
+                <p class="visasPlotis" id="tekstas">Lorem ipsum dolor sit amet consectetur
                      adipisicing elit. Dicta fugit recusandae 
                      delectus repudiandae doloribus magni.</p>
             </div>
